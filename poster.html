@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World Today — 20 November 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: #f3eee3;
+    color: #17130e;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: 1024px; height: 1024px;
+    padding: 40px 44px 36px 44px;
+    display: flex; flex-direction: column;
+    background: #f3eee3;
+    position: relative;
+  }
+  /* ---------- masthead ---------- */
+  .mast { border-top: 1px solid #17130e; padding-top: 9px; text-align: center; }
+  .eyebrow {
+    display: flex; justify-content: center; align-items: baseline; gap: 10px;
+    font-size: 8.5px; letter-spacing: 3.2px; text-transform: uppercase;
+    color: #6b6355;
+  }
+  .eyebrow .dot { color: #b31b1b; letter-spacing: 0; font-size: 9px; }
+  h1.masthead {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 1.02;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+  .redrule { height: 4px; background: #b31b1b; margin-top: 9px; }
+  /* ---------- dateline ---------- */
+  .dateline {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 11px 0 10px 0;
+    border-bottom: 1px solid #17130e;
+  }
+  .date {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 31px; letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  .meta {
+    font-size: 8.5px; letter-spacing: 2.4px; text-transform: uppercase;
+    color: #6b6355;
+  }
+  /* ---------- lead ---------- */
+  .lead {
+    display: grid; grid-template-columns: 1fr 132px;
+    gap: 26px; align-items: start;
+    padding: 18px 0 16px 0;
+    border-bottom: 3px solid #17130e;
+  }
+  .kicker {
+    font-size: 8.5px; letter-spacing: 2.6px; text-transform: uppercase;
+    color: #b31b1b; margin-bottom: 7px;
+  }
+  .lead h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal; font-size: 46px; line-height: 1.03;
+    letter-spacing: -0.4px;
+  }
+  .dek {
+    font-size: 13.5px; line-height: 1.45; color: #3b352c;
+    margin-top: 10px; max-width: 700px;
+  }
+  .leadart { padding-top: 4px; color: #17130e; }
+  .leadart svg { width: 132px; height: 132px; display: block; }
+  /* ---------- grid ---------- */
+  .grid {
+    flex: 1; display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .grid article {
+    display: flex; flex-direction: column;
+    padding: 14px 22px 12px 0;
+  }
+  .grid article:nth-child(even) { padding-left: 22px; padding-right: 0; border-left: 1px solid #c4baa7; }
+  .grid article:nth-child(n+3) { border-top: 1px solid #c4baa7; }
+  .cellhead { display: flex; justify-content: space-between; align-items: flex-start; }
+  .cellhead .kicker { margin-bottom: 0; padding-top: 3px; }
+  .cellhead svg { width: 38px; height: 38px; color: #17130e; flex: 0 0 38px; }
+  .grid h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal; font-size: 27px; line-height: 1.12;
+    letter-spacing: -0.2px; margin-top: 8px;
+  }
+  .grid p {
+    font-size: 13px; line-height: 1.52; color: #3b352c; margin-top: 7px;
+  }
+  .grid .place {
+    font-size: 8px; letter-spacing: 1.8px; text-transform: uppercase;
+    color: #17130e; font-weight: bold; margin-top: 10px;
+  }
+  .source {
+    margin-top: auto; padding-top: 10px;
+    border-top: 1px solid #ddd3c0; width: 100%;
+    font-size: 7.5px; letter-spacing: 1.9px; text-transform: uppercase;
+    color: #7d7466;
+  }
+  .colophon {
+    display: flex; justify-content: space-between;
+    border-top: 1px solid #17130e; margin-top: 10px; padding-top: 7px;
+    font-size: 7.5px; letter-spacing: 2px; text-transform: uppercase; color: #6b6355;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="mast">
+    <div class="eyebrow">
+      <span>World edition</span><span class="dot">&#9679;</span><span>Seven stories &middot; five regions</span>
+    </div>
+    <h1 class="masthead">The World Today</h1>
+  </header>
+  <div class="redrule"></div>
+
+  <div class="dateline">
+    <div class="date">Friday, 20 November 2026</div>
+    <div class="meta">Morning edition &nbsp;&middot;&nbsp; World news in brief</div>
+  </div>
+
+  <section class="lead">
+    <div>
+      <div class="kicker">Markets &middot; Lead story</div>
+      <h2>The AI trade cracks after<br>Anthropic&rsquo;s record listing</h2>
+      <p class="dek">The lab raised $107bn in the largest listing ever, then its shares slid: the S&amp;P 500 fell for a seventh straight session, the longest run since 2020.</p>
+    </div>
+    <div class="leadart">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="square">
+          <path d="M5 6v50h53"/>
+          <path d="M11 20l11 9 8-6 13 17"/>
+        </g>
+        <path d="M44 40l12 0 0-12" fill="none" stroke="currentColor" stroke-width="3.6"/>
+        <path d="M56 28l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="3.6"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="grid">
+
+    <article>
+      <div class="cellhead">
+        <div class="kicker">Europe &middot; Politics</div>
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square">
+            <path d="M3 25h42"/>
+            <path d="M8 25c0-9 7.2-16 16-16s16 7 16 16"/>
+            <path d="M12 25v9M24 25v9M36 25v9"/>
+            <path d="M3 38h42"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Britain reaches back across the Channel</h3>
+      <div class="place">Brussels</div>
+      <p>Burnham and EU leaders seal a post-Brexit reset on food trade and youth mobility.</p>
+      <div class="source">Reuters &middot; The Guardian</div>
+    </article>
+    <article>
+      <div class="cellhead">
+        <div class="kicker">Middle East &middot; Conflict</div>
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="6" y="31" width="36" height="10" rx="5" fill="none" stroke="currentColor" stroke-width="2.6"/>
+          <circle cx="13" cy="36" r="2.6" fill="currentColor"/><circle cx="21" cy="36" r="2.6" fill="currentColor"/>
+          <circle cx="29" cy="36" r="2.6" fill="currentColor"/><circle cx="37" cy="36" r="2.6" fill="currentColor"/>
+          <path d="M7 31h34l-3-7H11z" fill="currentColor"/>
+          <rect x="15" y="17" width="13" height="7" fill="currentColor"/>
+          <rect x="26" y="19" width="20" height="3" fill="currentColor"/>
+        </svg>
+      </div>
+      <h3>Israeli tanks cross Gaza&rsquo;s yellow line</h3>
+      <div class="place">Gaza City</div>
+      <p>First ground raid past the ceasefire boundary since 2025, as the truce board warns of collapse.</p>
+      <div class="source">Reuters &middot; AFP</div>
+    </article>
+    <article>
+      <div class="cellhead">
+        <div class="kicker">South Asia &middot; Climate</div>
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M41.9 30.5 L41.5 31.3 L41.1 32.0 L40.7 32.7 L40.2 33.4 L39.8 34.1 L39.3 34.8 L38.7 35.4 L38.2 36.0 L37.6 36.6 L37.0 37.1 L36.3 37.6 L35.7 38.1 L35.0 38.6 L34.3 39.0 L33.6 39.4 L32.9 39.8 L32.2 40.1 L31.4 40.4 L30.7 40.7 L29.9 40.9 L29.2 41.1 L28.4 41.2 L27.6 41.4 L26.8 41.5 L26.0 41.5 L25.3 41.5 L24.5 41.5 L23.7 41.5 L22.9 41.4 L22.2 41.3 L21.4 41.1 L20.7 40.9 L20.0 40.7 L19.2 40.5 L18.5 40.2 L17.8 39.9 L17.2 39.5 L16.5 39.2 L15.9 38.8 L15.3 38.3 L14.7 37.9 L14.1 37.4 L13.5 36.9 L13.0 36.4 L12.5 35.9 L12.0 35.3 L11.6 34.8 L11.2 34.2 L10.8 33.6 L10.4 32.9 L10.1 32.3 L9.8 31.6 L9.5 31.0 L9.3 30.3 L9.1 29.6 L8.9 29.0 L8.7 28.3 L8.6 27.6 L8.5 26.9 L8.5 26.2 L8.4 25.5 L8.4 24.8 L8.5 24.1 L8.5 23.4 L8.6 22.7 L8.8 22.1 L8.9 21.4 L9.1 20.8 L9.3 20.1 L9.5 19.5 L9.8 18.9 L10.1 18.3 L10.4 17.7 L10.8 17.1 L11.1 16.6 L11.5 16.0 L11.9 15.5 L12.3 15.0 L12.8 14.6 L13.3 14.1 L13.8 13.7 L14.3 13.3 L14.8 12.9 L15.3 12.5 L15.9 12.2 L16.4 11.9 L17.0 11.6 L17.6 11.4 L18.1 11.2 L18.7 11.0 L19.3 10.8 L19.9 10.7 L20.5 10.6 L21.2 10.5 L21.8 10.4 L22.4 10.4 L23.0 10.4 L23.6 10.4 L24.2 10.4 L24.8 10.5 L25.4 10.6 L26.0 10.8 L26.5 10.9 L27.1 11.1 L27.6 11.3 L28.2 11.5 L28.7 11.8 L29.2 12.0 L29.7 12.3 L30.2 12.6 L30.7 13.0 L31.1 13.3 L31.6 13.7 L32.0 14.1 L32.4 14.5 L32.7 14.9 L33.1 15.3 L33.4 15.8 L33.7 16.2 L34.0 16.7 L34.3 17.2 L34.5 17.7 L34.8 18.2 L35.0 18.7 L35.1 19.2 L35.3 19.7 L35.4 20.2 L35.5 20.8 L35.6 21.3 L35.6 21.8 L35.7 22.3 L35.7 22.9 L35.7 23.4 L35.6 23.9 L35.6 24.4 L35.5 24.9 L35.4 25.4 L35.3 25.9 L35.1 26.4 L34.9 26.9 L34.7 27.3 L34.5 27.8 L34.3 28.2 L34.1 28.6 L33.8 29.1 L33.5 29.5 L33.2 29.8 L32.9 30.2 L32.6 30.6 L32.2 30.9 L31.9 31.2 L31.5 31.5 L31.1 31.8 L30.7 32.1 L30.4 32.3 L29.9 32.6 L29.5 32.8 L29.1 33.0 L28.7 33.1 L28.3 33.3 L27.8 33.4 L27.4 33.5 L26.9 33.6 L26.5 33.7 L26.1 33.7 L25.6 33.7 L25.2 33.7 L24.7 33.7 L24.3 33.7 L23.9 33.6 L23.5 33.6 L23.0 33.5 L22.6 33.4 L22.2 33.3 L21.8 33.1 L21.5 33.0 L21.1 32.8 L20.7 32.6 L20.4 32.4 L20.0 32.2 L19.7 31.9 L19.4 31.7 L19.1 31.4 L18.8 31.2 L18.5 30.9 L18.2 30.6 L18.0 30.3 L17.7 30.0 L17.5 29.7 L17.3 29.3 L17.1 29.0 L17.0 28.7 L16.8 28.3 L16.7 28.0 L16.6 27.6 L16.5 27.3 L16.4 26.9 L16.3 26.6 L16.3 26.2 L16.2 25.8 L16.2 25.5 L16.2 25.1 L16.2 24.8 L16.2 24.4 L16.3 24.1 L16.3 23.8 L16.4 23.4 L16.5 23.1 L16.6 22.8 L16.7 22.5 L16.8 22.1 L17.0 21.8 L17.1 21.6 L17.3 21.3 L17.5 21.0 L17.7 20.7 L17.9 20.5 L18.1 20.3 L18.3 20.0 L18.5 19.8 L18.7 19.6 L19.0 19.4 L19.2 19.2 L19.5 19.1 L19.7 18.9 L20.0 18.8 L20.3 18.7 L20.5 18.5 L20.8 18.4 L21.1 18.4 L21.4 18.3 L21.6 18.2 L21.9 18.2 L22.2 18.1 L22.5 18.1 L22.7 18.1 L23.0 18.1 L23.3 18.1 L23.5 18.2 L23.8 18.2 L24.1 18.3 L24.3 18.3 L24.5 18.4 L24.8 18.5 L25.0 18.6 L25.2 18.7 L25.5 18.8 L25.7 18.9 L25.9 19.0 L26.1 19.2 L26.3 19.3 L26.4 19.5 L26.6 19.6 L26.8 19.8 L26.9 20.0 L27.1 20.2 L27.2 20.3 L27.3 20.5 L27.4 20.7 L27.5 20.9 L27.6 21.1 L27.7 21.3 L27.8 21.5 L27.8 21.7 L27.9 21.9 L27.9 22.1 L28.0 22.3 L28.0 22.5 L28.0 22.7 L28.0 22.9 L28.0 23.0 L28.0 23.2 L27.9 23.4 L27.9 23.6 L27.9 23.8 L27.8 23.9 L27.8 24.1 L27.7 24.3 L27.6 24.4 L27.6 24.6 L27.5 24.7 L27.4 24.9 L27.3 25.0 L27.2 25.1 L27.1 25.2 L27.0 25.4 L26.9 25.5 L26.7 25.6 L26.6 25.7 L26.5 25.7 L26.4 25.8 L26.3 25.9 L26.1 25.9 L26.0 26.0 L25.9 26.0 L25.8 26.1 L25.6 26.1 L25.5 26.1 L25.4 26.2 L25.2 26.2" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="24" r="2.6" fill="currentColor"/>
+        </svg>
+      </div>
+      <h3>Cyclone Akvan comes ashore in Odisha</h3>
+      <div class="place">Gopalpur</div>
+      <p>372,000 evacuated; the storm weakens to a deep depression with no deaths yet reported.</p>
+      <div class="source">PTI &middot; India Meteorological Dept</div>
+    </article>
+    <article>
+      <div class="cellhead">
+        <div class="kicker">Africa &middot; Security</div>
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <g fill="currentColor">
+            <rect x="1" y="21.5" width="11" height="5"/>
+            <path d="M11 15l13 9-13 9z"/>
+            <rect x="36" y="21.5" width="11" height="5"/>
+            <path d="M37 15l-13 9 13 9z"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Two armies mass at the Badme frontier</h3>
+      <div class="place">Badme</div>
+      <p>Ethiopia and Eritrea are within striking distance, monitors say, reviving Horn of Africa war fears.</p>
+      <div class="source">ACLED &middot; Reuters</div>
+    </article>
+    <article>
+      <div class="cellhead">
+        <div class="kicker">Asia &middot; Law</div>
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="2.8" fill="none" stroke-linecap="square">
+            <path d="M24 6v32"/><path d="M6 12h36"/><path d="M17 40h14"/>
+            <path d="M6 12l-4 10h8zM42 12l-4 10h8z"/>
+          </g>
+          <g fill="currentColor">
+            <path d="M2 22a4.6 4.6 0 0 0 9.2 0z"/>
+            <path d="M38 22a4.6 4.6 0 0 0 9.2 0z"/>
+          </g>
+        </svg>
+      </div>
+      <h3>World court finds Myanmar&rsquo;s genocide</h3>
+      <div class="place">The Hague</div>
+      <p>The ICJ&rsquo;s first state genocide verdict orders reparations and a safe return for the Rohingya.</p>
+      <div class="source">AFP &middot; Human Rights Watch</div>
+    </article>
+    <article>
+      <div class="cellhead">
+        <div class="kicker">Sport &middot; Chess</div>
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="7" y="7" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.6"/>
+          <g fill="currentColor">
+            <rect x="7" y="7" width="8.5" height="8.5"/><rect x="24" y="7" width="8.5" height="8.5"/>
+            <rect x="15.5" y="15.5" width="8.5" height="8.5"/><rect x="32.5" y="15.5" width="8.5" height="8.5"/>
+            <rect x="7" y="24" width="8.5" height="8.5"/><rect x="24" y="24" width="8.5" height="8.5"/>
+            <rect x="15.5" y="32.5" width="8.5" height="8.5"/><rect x="32.5" y="32.5" width="8.5" height="8.5"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Chess opens its youngest title fight</h3>
+      <div class="place">Geneva</div>
+      <p>Gukesh, 20, defends against Sindarov, 20, in Geneva; game one on 24 November.</p>
+      <div class="source">FIDE &middot; The Guardian</div>
+    </article>
+
+  </section>
+
+  <div class="colophon">
+    <span>Compiled from wire and agency reports</span>
+    <span>All reports datelined 20 November 2026</span>
+  </div>
+
+</div>
+</body>
+</html>
