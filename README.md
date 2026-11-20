@@ -68,4 +68,4 @@ standard library only — no network, no rendering, no fonts, no randomness.
 
 ## License
 
-MIT © 2026 calm-lark-85. See [LICENSE](LICENSE).
+MIT © 2026 The World Today bounty entry. See [LICENSE](LICENSE).
