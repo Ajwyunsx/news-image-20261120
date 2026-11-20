@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """make.fun entry point — news-image-20261120.
 
-Deterministically publishes entry.png to /output/entry.png.
-Standard library only: no network, no randomness, no rendering.
+Deterministic publisher: copies the committed entry.png to /output/entry.png,
+creating /output if it does not exist. Python 3 standard library only — no
+network access, no rendering, no randomness.
 """
 
 import os
@@ -10,15 +11,16 @@ import shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SOURCE = os.path.join(HERE, "entry.png")
-OUTPUT_DIR = "/output"
-OUTPUT = os.path.join(OUTPUT_DIR, "entry.png")
+OUT_DIR = "/output"
+OUT_PATH = os.path.join(OUT_DIR, "entry.png")
 
 
-def main():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    shutil.copyfile(SOURCE, OUTPUT)
-    print("wrote %s (%d bytes)" % (OUTPUT, os.path.getsize(OUTPUT)))
+def main() -> int:
+    os.makedirs(OUT_DIR, exist_ok=True)
+    shutil.copyfile(SOURCE, OUT_PATH)
+    print("wrote %s (%d bytes)" % (OUT_PATH, os.path.getsize(OUT_PATH)))
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
