@@ -55,7 +55,7 @@ python3 main.py
 
 Copies the committed `entry.png` to `/output/entry.png`, creating `/output` if
 it is missing. Deterministic: the same bytes are copied every run, so repeated
-runs are byte-identical (143,509-byte source, verified with `cmp`). Python 3
+runs are byte-identical (141,498-byte source, verified with `cmp`). Python 3
 standard library only — no network, no rendering, no fonts, no randomness.
 
 ## Files
